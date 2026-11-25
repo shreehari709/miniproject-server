@@ -3,7 +3,7 @@ import './loadEnv.js';
 
 const connectDB = async () => {
   try {
-    const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://transitops:FOZc9PIjgHw4zpI6@cluster0.sha48qi.mongodb.net/transitops';
+    const mongoUri = process.env.MONGODB_URI ;
     const conn = await mongoose.connect(mongoUri, {
       serverSelectionTimeoutMS: 10000,
     });
